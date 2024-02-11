@@ -1,8 +1,10 @@
-type Props = {
-  color?: string;
-};
+import {FC} from "react";
 
-export const IconPin = ({color = `black`}: Props) => {
+interface Props {
+  color?: string;
+}
+
+export const IconPin: FC<Props> = ({color = `black`}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
